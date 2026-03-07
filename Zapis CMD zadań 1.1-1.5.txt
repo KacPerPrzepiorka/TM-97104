@@ -1,0 +1,339 @@
+PS C:\WINDOWS\system32> mkdir C:\TestowanieMobilne; cd C:\TestowanieMobilne; 1..10 | % { $d="Artefakt$("{0:d2}" -f $_)"; md $d; ni "$d/.gitkeep" -f }; tree /f
+
+
+    Directory: C:\
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         7.03.2026     20:33                TestowanieMobilne
+
+
+    Directory: C:\TestowanieMobilne
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         7.03.2026     20:33                Artefakt01
+
+
+    Directory: C:\TestowanieMobilne\Artefakt01
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7.03.2026     20:33              0 .gitkeep
+
+
+    Directory: C:\TestowanieMobilne
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         7.03.2026     20:33                Artefakt02
+
+
+    Directory: C:\TestowanieMobilne\Artefakt02
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7.03.2026     20:33              0 .gitkeep
+
+
+    Directory: C:\TestowanieMobilne
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         7.03.2026     20:33                Artefakt03
+
+
+    Directory: C:\TestowanieMobilne\Artefakt03
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7.03.2026     20:33              0 .gitkeep
+
+
+    Directory: C:\TestowanieMobilne
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         7.03.2026     20:33                Artefakt04
+
+
+    Directory: C:\TestowanieMobilne\Artefakt04
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7.03.2026     20:33              0 .gitkeep
+
+
+    Directory: C:\TestowanieMobilne
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         7.03.2026     20:33                Artefakt05
+
+
+    Directory: C:\TestowanieMobilne\Artefakt05
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7.03.2026     20:33              0 .gitkeep
+
+
+    Directory: C:\TestowanieMobilne
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         7.03.2026     20:33                Artefakt06
+
+
+    Directory: C:\TestowanieMobilne\Artefakt06
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7.03.2026     20:33              0 .gitkeep
+
+
+    Directory: C:\TestowanieMobilne
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         7.03.2026     20:33                Artefakt07
+
+
+    Directory: C:\TestowanieMobilne\Artefakt07
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7.03.2026     20:33              0 .gitkeep
+
+
+    Directory: C:\TestowanieMobilne
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         7.03.2026     20:33                Artefakt08
+
+
+    Directory: C:\TestowanieMobilne\Artefakt08
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7.03.2026     20:33              0 .gitkeep
+
+
+    Directory: C:\TestowanieMobilne
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         7.03.2026     20:33                Artefakt09
+
+
+    Directory: C:\TestowanieMobilne\Artefakt09
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7.03.2026     20:33              0 .gitkeep
+
+
+    Directory: C:\TestowanieMobilne
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         7.03.2026     20:33                Artefakt10
+
+
+    Directory: C:\TestowanieMobilne\Artefakt10
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         7.03.2026     20:33              0 .gitkeep
+Folder PATH listing
+Volume serial number is B6AA-CDC6
+C:.
+├───Artefakt01
+│       .gitkeep
+│
+├───Artefakt02
+│       .gitkeep
+│
+├───Artefakt03
+│       .gitkeep
+│
+├───Artefakt04
+│       .gitkeep
+│
+├───Artefakt05
+│       .gitkeep
+│
+├───Artefakt06
+│       .gitkeep
+│
+├───Artefakt07
+│       .gitkeep
+│
+├───Artefakt08
+│       .gitkeep
+│
+├───Artefakt09
+│       .gitkeep
+│
+└───Artefakt10
+        .gitkeep
+
+
+
+PS C:\TestowanieMobilne> notepad .gitignore
+PS C:\TestowanieMobilne> git init
+Initialized empty Git repository in C:/TestowanieMobilne/.git/
+PS C:\TestowanieMobilne> git add .
+PS C:\TestowanieMobilne> git commit -m "Inicjalizacja projektu - struktura i gitignore"
+[master (root-commit) fa51327] Inicjalizacja projektu - struktura i gitignore
+ Committer: admstud <admstud@MX1-Docker-09.EDU-WSB.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 11 files changed, 14 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 Artefakt01/.gitkeep
+ create mode 100644 Artefakt02/.gitkeep
+ create mode 100644 Artefakt03/.gitkeep
+ create mode 100644 Artefakt04/.gitkeep
+ create mode 100644 Artefakt05/.gitkeep
+ create mode 100644 Artefakt06/.gitkeep
+ create mode 100644 Artefakt07/.gitkeep
+ create mode 100644 Artefakt08/.gitkeep
+ create mode 100644 Artefakt09/.gitkeep
+ create mode 100644 Artefakt10/.gitkeep
+PS C:\TestowanieMobilne> git branch -M main
+PS C:\TestowanieMobilne> git remote add origin https://github.com/KacPerPrzepiorka/TM-97104.git
+PS C:\TestowanieMobilne> git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 490 bytes | 490.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/KacPerPrzepiorka/TM-97104.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\TestowanieMobilne> cd Artefakt01
+PS C:\TestowanieMobilne\Artefakt01> notepad Dockerfile
+
+PS C:\TestowanieMobilne\Artefakt01> docker build -t student-hello .
+[+] Building 0.5s (1/1) FINISHED                                                       docker:desktop-linux
+ => [internal] load build definition from Dockerfile                                                   0.2s
+ => => transferring dockerfile: 2B                                                                     0.0s
+ERROR: failed to build: failed to solve: failed to read dockerfile: open Dockerfile: no such file or directory
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/bd6dzb9f83xu8t66cfiivjxhz
+PS C:\TestowanieMobilne\Artefakt01> Rename-Item Dockerfile.txt Dockerfile
+PS C:\TestowanieMobilne\Artefakt01> docker build -t student-hello .
+[+] Building 5.1s (5/5) FINISHED                                                                   docker:desktop-linux
+ => [internal] load build definition from Dockerfile                                                               0.0s
+ => => transferring dockerfile: 130B                                                                               0.0s
+ => [internal] load metadata for docker.io/library/alpine:latest                                                   2.8s
+ => [internal] load .dockerignore                                                                                  0.1s
+ => => transferring context: 2B                                                                                    0.0s
+ => [1/1] FROM docker.io/library/alpine:latest@sha256:25109184c71bdad752c8312a8623239686a9a2071e8825f20acb8f2198c  0.9s
+ => => resolve docker.io/library/alpine:latest@sha256:25109184c71bdad752c8312a8623239686a9a2071e8825f20acb8f2198c  0.1s
+ => => sha256:589002ba0eaed121a1dbf42f6648f29e5be55d5c8a6ee0f8eaa0285cc21ac153 3.86MB / 3.86MB                     0.7s
+ => exporting to image                                                                                             1.7s
+ => => exporting layers                                                                                            0.0s
+ => => exporting manifest sha256:4a69564136ddc7b1d523fb61b29afa66980a8f815ffebb6eac81fa3b9a23b59d                  0.1s
+ => => exporting config sha256:46a5dada7a2f0b0127496bf8e75cc207546383db5f6be6461bff038745522cc5                    0.0s
+ => => exporting attestation manifest sha256:5db12f00d372a59ebcde5194773a1959b14dd1e3721d67e2462d8546c4526f90      0.1s
+ => => exporting manifest list sha256:c399687047263972d36d7d7ee5d3de07d967c0d3dd90420838d7167ba2961f06             0.1s
+ => => naming to docker.io/library/student-hello:latest                                                            0.0s
+ => => unpacking to docker.io/library/student-hello:latest                                                         1.2s
+
+ 1 warning found (use docker --debug to expand):
+ - JSONArgsRecommended: JSON arguments recommended for ENTRYPOINT to prevent unintended behavior related to OS signals (line 3)
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/ngqk68uzd60hutfp5j299ixjz
+PS C:\TestowanieMobilne\Artefakt01> docker run student-hello
+Hello - Student ID: 97104
+PS C:\TestowanieMobilne\Artefakt01> cd ..
+PS C:\TestowanieMobilne> git add Artefakt01/Dockerfile
+PS C:\TestowanieMobilne> git commit -m "Dodano Dockerfile z numerem studenta"
+[main cee5286] Dodano Dockerfile z numerem studenta
+ Committer: admstud <admstud@MX1-Docker-09.EDU-WSB.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3 insertions(+)
+ create mode 100644 Artefakt01/Dockerfile
+PS C:\TestowanieMobilne> git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 454 bytes | 454.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/KacPerPrzepiorka/TM-97104.git
+   fa51327..cee5286  main -> main
+PS C:\TestowanieMobilne> docker pull appium/appium
+Using default tag: latest
+latest: Pulling from appium/appium
+9314449bf7eb: Pull complete
+a3629ac5b9f4: Pull complete
+4f4fb700ef54: Pull complete
+364df2637af6: Pull complete
+cfc6167f527d: Pull complete
+537924712d23: Pull complete
+dc1e0dc38a55: Pull complete
+30711d240881: Pull complete
+de46dbc5e7d9: Pull complete
+0582f787118f: Pull complete
+00306bf75e68: Pull complete
+44c770535e69: Pull complete
+Digest: sha256:db22c8f2dff3f452477c2049b50feb9720c60a9ee23e6abdd6bc2acd82dc8dba
+Status: Downloaded newer image for appium/appium:latest
+docker.io/appium/appium:latest
+PS C:\TestowanieMobilne> docker images
+                                                                                                    i Info →   U  In Use
+IMAGE                  ID             DISK USAGE   CONTENT SIZE   EXTRA
+appium/appium:latest   db22c8f2dff3       3.04GB          859MB
+student-hello:latest   c39968704726         13MB         3.87MB    U
+PS C:\TestowanieMobilne> docker run student-hello
+Hello - Student ID: 97104
+PS C:\TestowanieMobilne>
