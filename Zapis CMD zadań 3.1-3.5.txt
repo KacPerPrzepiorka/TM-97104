@@ -1,0 +1,81 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\WINDOWS\system32> cd /
+PS C:\> git clone https://github.com/KacPerPrzepiorka/TM-97104.git TestowanieMobilne
+Cloning into 'TestowanieMobilne'...
+remote: Enumerating objects: 3545, done.
+remote: Counting objects: 100% (3545/3545), done.
+remote: Compressing objects: 100% (1824/1824), done.
+remote: Total 3545 (delta 1602), reused 3537 (delta 1594), pack-reused 0 (from 0)
+Receiving objects: 100% (3545/3545), 7.88 MiB | 18.94 MiB/s, done.
+Resolving deltas: 100% (1602/1602), done.
+Updating files: 100% (3315/3315), done.
+PS C:\> cd TestowanieMobilne
+PS C:\TestowanieMobilne> cd Artefakt03
+PS C:\TestowanieMobilne\Artefakt03> notepad docker-compose.yml
+PS C:\TestowanieMobilne\Artefakt03> git add .
+PS C:\TestowanieMobilne\Artefakt03> git commit -m "Zadanie 3.1 - Dodano plik konfiguracyjny docker-compose.yml"
+[main 7a0c8c1] Zadanie 3.1 - Dodano plik konfiguracyjny docker-compose.yml
+ Committer: admstud <admstud@MX1-Docker-07.EDU-WSB.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+                                                                                                                                               1 file changed, 10 insertions(+)                                                                                                              create mode 100644 Artefakt03/docker-compose.yml                                                                                             PS C:\TestowanieMobilne\Artefakt03> git push                                                                                                  info: please complete authentication in your browser...                                                                                       Enumerating objects: 6, done.                                                                                                                 Counting objects: 100% (6/6), done.                                                                                                           Delta compression using up to 8 threads                                                                                                       Compressing objects: 100% (4/4), done.                                                                                                        Writing objects: 100% (4/4), 524 bytes | 262.00 KiB/s, done.                                                                                  Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)                                                                                 remote: Resolving deltas: 100% (1/1), completed with 1 local object.                                                                          To https://github.com/KacPerPrzepiorka/TM-97104.git                                                                                              aa8071a..7a0c8c1  main -> main                                                                                                             PS C:\TestowanieMobilne\Artefakt03> docker compose up -d                                                                                      time="2026-03-10T19:04:27+01:00" level=warning msg="C:\\TestowanieMobilne\\Artefakt03\\docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"                                                                          [+] up 15/15
+ ✔ Image appium/appium:latest    Pulled                                                                            93.0s
+ ✔ Network artefakt03_default    Created                                                                           0.1s
+ ✔ Container artefakt03-appium-1 Created                                                                           1.5s
+PS C:\TestowanieMobilne\Artefakt03> docker ps
+CONTAINER ID   IMAGE                  COMMAND                  CREATED          STATUS          PORTS                                         NAMES
+bdbbdd3ace68   appium/appium:latest   "sh -c ${WORK_PATH}/…"   13 seconds ago   Up 11 seconds   0.0.0.0:4723->4723/tcp, [::]:4723->4723/tcp   artefakt03-appium-1
+PS C:\TestowanieMobilne\Artefakt03> Test-NetConnection -ComputerName localhost -Port 4723
+
+
+ComputerName     : localhost
+RemoteAddress    : 127.0.0.1
+RemotePort       : 4723
+InterfaceAlias   : Loopback Pseudo-Interface 1
+SourceAddress    : 127.0.0.1
+TcpTestSucceeded : True
+
+
+
+PS C:\TestowanieMobilne\Artefakt03> docker compose logs appium
+time="2026-03-10T19:12:15+01:00" level=warning msg="C:\\TestowanieMobilne\\Artefakt03\\docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+appium-1  | [Appium] Welcome to Appium v3.2.0
+appium-1  | [Appium] The autodetected Appium home path: /home/androidusr/.appium
+appium-1  | [Appium] Attempting to load driver espresso...
+appium-1  | [Appium] Attempting to load driver flutter...
+appium-1  | [Appium] Attempting to load driver gecko...
+appium-1  | [Appium] Requiring driver at /home/androidusr/.appium/node_modules/appium-flutter-driver/build/lib/driver.js
+appium-1  | [Appium] FlutterDriver has been successfully loaded in 2.338s
+appium-1  | [Appium] Attempting to load driver uiautomator2...
+appium-1  | [Appium] Requiring driver at /home/androidusr/.appium/node_modules/appium-espresso-driver/build/lib/index.js
+appium-1  | [Appium] EspressoDriver has been successfully loaded in 3.085s
+appium-1  | [Appium] Requiring driver at /home/androidusr/.appium/node_modules/appium-geckodriver/build/lib/index.js
+appium-1  | [Appium] GeckoDriver has been successfully loaded in 3.188s
+appium-1  | [Appium] Requiring driver at /home/androidusr/.appium/node_modules/appium-uiautomator2-driver/build/lib/index.js
+appium-1  | [Appium] AndroidUiautomator2Driver has been successfully loaded in 0.844s
+appium-1  | [Appium] Appium REST http interface listener started on http://0.0.0.0:4723
+appium-1  | [Appium] You can provide the following URLs in your client code to connect to this server:
+appium-1  |     http://127.0.0.1:4723/ (only accessible from the same host)
+appium-1  |     http://172.18.0.2:4723/
+appium-1  | [Appium] Available drivers:
+appium-1  | [Appium]   - espresso@6.3.8 (automationName 'Espresso')
+appium-1  | [Appium]   - flutter@3.3.0 (automationName 'Flutter')
+appium-1  | [Appium]   - gecko@2.1.11 (automationName 'Gecko')
+appium-1  | [Appium]   - uiautomator2@6.7.13 (automationName 'UiAutomator2')
+appium-1  | [Appium] No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
+PS C:\TestowanieMobilne\Artefakt03> docker exec -it artefakt03-appium-1 appium -v
+3.2.0
+PS C:\TestowanieMobilne\Artefakt03>
