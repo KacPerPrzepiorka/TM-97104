@@ -1,0 +1,212 @@
+
+
+PS C:\TestowanieMobilne\Artefakt05> C:\Users\student-wroclaw\AppData\Local\Python\pythoncore-3.14-64\python step1_caps.py
+Sukces! Wykryto: io.appium.android.apis / io.appium.android.apis.ApiDemos
+PS C:\TestowanieMobilne\Artefakt05> C:\Users\student-wroclaw\AppData\Local\Python\pythoncore-3.14-64\python python -m pip install Appium-Python-Client
+C:\Users\student-wroclaw\AppData\Local\Python\pythoncore-3.14-64\python.exe: can't open file 'C:\\TestowanieMobilne\\Artefakt05\\python': [Errno 2] No such file or directory      t
+t : The term 't' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if
+a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ t
++ ~
+    + CategoryInfo          : ObjectNotFound: (t:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\TestowanieMobilne\Artefakt05> C:\Users\student-wroclaw\AppData\Local\Python\pythoncore-3.14-64\python step1_caps.py
+Sukces! Wykryto: io.appium.android.apis / io.appium.android.apis.ApiDemos
+PS C:\TestowanieMobilne\Artefakt05> git add .
+PS C:\TestowanieMobilne\Artefakt05> git commit -m "Zadanie 5.1 - Dodano step1_caps.py i wygenerowano 51_caps.json"
+[main 2f113b2] Zadanie 5.1 - Dodano step1_caps.py i wygenerowano 51_caps.json
+ Committer: admstud <admstud@MX1-Docker-12.EDU-WSB.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 56 insertions(+)
+ create mode 100644 Artefakt05/51_caps.json
+ create mode 100644 Artefakt05/step1_caps.py
+PS C:\TestowanieMobilne\Artefakt05> git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.30 KiB | 665.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/KacPerPrzepiorka/TM-97104.git
+   f363165..2f113b2  main -> main
+PS C:\TestowanieMobilne\Artefakt05> notepad step2_analysis.py
+PS C:\TestowanieMobilne\Artefakt05> C:\Users\student-wroclaw\AppData\Local\Python\pythoncore-3.14-64\python step2_analysis.py
+>>> ZADANIE 5.2: ANALIZA MANIFESTU (POŁĄCZENIE Z ARTEFAKTEM 02) <<<
+=== ARTEFAKT 5.2: RAPORT ANALIZY SYSTEMOWEJ ===
+Pakiet główny: io.appium.android.apis
+Liczba Activity: 332
+
+Kluczowe Uprawnienia (Co aplikacja chce robić?):
+- android.permission.READ_CONTACTS
+- android.permission.WRITE_CONTACTS
+- android.permission.VIBRATE
+- android.permission.ACCESS_COARSE_LOCATION
+- android.permission.INTERNET
+- android.permission.SET_WALLPAPER
+- android.permission.WRITE_EXTERNAL_STORAGE
+- android.permission.SEND_SMS
+- android.permission.RECEIVE_SMS
+- android.permission.NFC
+- android.permission.RECORD_AUDIO
+- android.permission.CAMERA
+
+[OK] Sukces! Artefakt zapisany jako: 52_inspection.log
+PS C:\TestowanieMobilne\Artefakt05> git add .
+PS C:\TestowanieMobilne\Artefakt05> git commit -m "Zadanie 5.2 - Analiza manifestu i log z uprawnieniami"
+[main e8835af] Zadanie 5.2 - Analiza manifestu i log z uprawnieniami
+ Committer: admstud <admstud@MX1-Docker-12.EDU-WSB.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 49 insertions(+)
+ create mode 100644 Artefakt05/step2_analysis.py
+PS C:\TestowanieMobilne\Artefakt05> git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.20 KiB | 1.20 MiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/KacPerPrzepiorka/TM-97104.git
+   2f113b2..e8835af  main -> main
+PS C:\TestowanieMobilne\Artefakt05> notepad step3_selectors.py
+PS C:\TestowanieMobilne\Artefakt05> C:\Users\student-wroclaw\AppData\Local\Python\pythoncore-3.14-64\python step3_selectors.py
+>>> ZADANIE 5.3: BUDOWA MAPY SELEKTOROW (UI MAPPING) <<<
+[OK] Zmapowano 459 unikalnych elementow UI.
+Artefakt zapisany: 53_selectors.json
+PS C:\TestowanieMobilne\Artefakt05> git add .
+PS C:\TestowanieMobilne\Artefakt05> git commit -m "Zadanie 5.3 - Wygenerowano slownik selektorow UI"
+[main 2e55ee5] Zadanie 5.3 - Wygenerowano slownik selektorow UI
+ Committer: admstud <admstud@MX1-Docker-12.EDU-WSB.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 505 insertions(+)
+ create mode 100644 Artefakt05/53_selectors.json
+ create mode 100644 Artefakt05/step3_selectors.py
+PS C:\TestowanieMobilne\Artefakt05> git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 6.23 KiB | 2.08 MiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/KacPerPrzepiorka/TM-97104.git
+   e8835af..2e55ee5  main -> main
+PS C:\TestowanieMobilne\Artefakt05> notepad step4_session.py
+PS C:\TestowanieMobilne\Artefakt05> C:\Users\student-wroclaw\AppData\Local\Python\pythoncore-3.14-64\python step4_session.py
+  File "C:\TestowanieMobilne\Artefakt05\step4_session.py", line 28
+    if not app_pkg or not app_act: [cite: 753]
+                                        ^
+SyntaxError: invalid syntax
+PS C:\TestowanieMobilne\Artefakt05> C:\Users\student-wroclaw\AppData\Local\Python\pythoncore-3.14-64\python step4_session.py
+>>> ZADANIE 5.4: INTEGRACJA ARTEFAKTOW (STABLE BUILD) <<<
+=== ARTEFAKT 5.4: SESSION READINESS REPORT ===
+Target App
+  Main Activity: io.appium.android.apis.ApiDemos
+  Package      : io.appium.android.apis
+Device
+  Name         : emulator-5554
+UI Elements
+  Loaded       : 459 loaded
+Status
+  Connection   : READY TO CONNECT
+PS C:\TestowanieMobilne\Artefakt05> git add .
+PS C:\TestowanieMobilne\Artefakt05> git commit -m "Zadanie 5.4 - Zbudowano Session Managera"
+[main d5a6db2] Zadanie 5.4 - Zbudowano Session Managera
+ Committer: admstud <admstud@MX1-Docker-12.EDU-WSB.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 55 insertions(+)
+ create mode 100644 Artefakt05/step4_session.py
+PS C:\TestowanieMobilne\Artefakt05> git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.17 KiB | 1.17 MiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/KacPerPrzepiorka/TM-97104.git
+   2e55ee5..d5a6db2  main -> main
+PS C:\TestowanieMobilne\Artefakt05> notepad step5_final.py
+PS C:\TestowanieMobilne\Artefakt05> C:\Users\student-wroclaw\AppData\Local\Python\pythoncore-3.14-64\python step5_final.py
+>>> ZADANIE 5.5: GENEROWANIE RAPORTU FEEDBACKU DLA DEWELOPERA <<<
+FEEDBACK DLA TWORCOW APLIKACJI
+[ZGODNY] Identyfikacja Aplikacji: Pakiet io.appium.android.apis poprawnie zmapowany.
+[INFORMACJA] Dostepnosc UI: Nie odnaleziono ID 'ACCESSIBILITY'. Sugestia: Zweryfikuj czy element nie zmienil nazwy na jedna z dostepnych: ['ACTION_BAR_TITLE', 'ACTION_BAR_SUBTITLE', 'ACTION_MODE_CLOSE_BUTTON'].
+[INFO] Blok 5 zakonczony. Raport opisowy gotowy: 55_result.xml
+PS C:\TestowanieMobilne\Artefakt05> git add .
+PS C:\TestowanieMobilne\Artefakt05> git commit -m "Zadanie 5.5 - Raport koncowy XML"
+[main 66022b6] Zadanie 5.5 - Raport koncowy XML
+ Committer: admstud <admstud@MX1-Docker-12.EDU-WSB.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 57 insertions(+)
+ create mode 100644 Artefakt05/55_result.xml
+ create mode 100644 Artefakt05/step5_final.py
+PS C:\TestowanieMobilne\Artefakt05> git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.57 KiB | 805.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/KacPerPrzepiorka/TM-97104.git
+   d5a6db2..66022b6  main -> main
+PS C:\TestowanieMobilne\Artefakt05>
