@@ -1,0 +1,5 @@
+>>> ZADANIE 5.5: GENEROWANIE RAPORTU FEEDBACKU DLA DEWELOPERA <<<
+FEEDBACK DLA TWORCOW APLIKACJI
+[ZGODNY] Identyfikacja Aplikacji: Pakiet io.appium.android.apis poprawnie zmapowany.
+[INFORMACJA] Dostepnosc UI: Nie odnaleziono ID 'ACCESSIBILITY'. Sugestia: Zweryfikuj czy element nie zmienil nazwy na jedna z dostepnych: ['ACTION_BAR_TITLE', 'ACTION_BAR_SUBTITLE', 'ACTION_MODE_CLOSE_BUTTON'].
+[INFO] Blok 5 zakonczony. Raport opisowy gotowy: 55_result.xml
