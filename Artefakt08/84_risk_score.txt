@@ -1,0 +1,8 @@
+WYNIK KONCOWY: 0/100
+STATUS: REJECTED (Aplikacja niebezpieczna)
+
+DEDUCTIONS:
+[-30] Flaga Debuggable jest AKTYWNA (High Risk!)
+[-20] Powazna luka w com.google.android.gms (High)
+[-10] Srednia luka w com.squareup.okhttp (Medium)
+[-40] Krytyczna luka w org.apache.commons (Critical)
