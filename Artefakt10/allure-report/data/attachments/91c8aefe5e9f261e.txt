@@ -1,0 +1,1 @@
+Tresc bledu: Serwer zwrocil timeout podczas proby zapisu.

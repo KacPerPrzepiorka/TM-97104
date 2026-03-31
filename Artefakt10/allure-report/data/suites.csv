@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Tue Mar 31 20:12:58 CEST 2026","Tue Mar 31 20:12:58 CEST 2026","8","","test_103_attachments","","","","test_screenshot_on_fail",""
+"passed","Tue Mar 31 20:12:58 CEST 2026","Tue Mar 31 20:12:58 CEST 2026","1","","test_101_allure_init","","","","test_success_case",""
+"passed","Tue Mar 31 20:12:58 CEST 2026","Tue Mar 31 20:12:58 CEST 2026","0","","test_102_meta_reporting","","","","test_view_lesson_details",""
+"passed","Tue Mar 31 20:12:58 CEST 2026","Tue Mar 31 20:12:58 CEST 2026","1","","test_102_meta_reporting","","","","test_view_lesson_list",""
+"failed","Tue Mar 31 20:12:58 CEST 2026","Tue Mar 31 20:12:58 CEST 2026","2","","test_101_allure_init","","","","test_failure_case",""
